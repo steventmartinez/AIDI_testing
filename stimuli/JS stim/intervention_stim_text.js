@@ -20,7 +20,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "AL",
@@ -43,7 +44,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -66,7 +68,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "AL",
@@ -89,7 +92,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -112,7 +116,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "AL",
@@ -135,7 +140,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -158,7 +164,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "AL/SM",
@@ -181,7 +188,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -204,7 +212,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "AL/SM",
@@ -227,7 +236,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -250,7 +260,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "SM",
@@ -273,7 +284,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -296,7 +308,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "SM",
@@ -319,7 +332,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -342,7 +356,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "SM",
@@ -365,7 +380,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -388,7 +404,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "SM",
@@ -411,7 +428,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -434,7 +452,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "SM",
@@ -457,7 +476,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -480,7 +500,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "TM",
@@ -503,7 +524,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -526,7 +548,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "TM",
@@ -549,7 +572,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -572,7 +596,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "TM",
@@ -595,7 +620,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 2.3,
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -618,7 +644,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "TM",
@@ -641,7 +668,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0.1,
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -664,7 +692,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "TM",
@@ -687,7 +716,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -710,7 +740,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "YF",
@@ -733,7 +764,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -756,7 +788,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "YF",
@@ -779,7 +812,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -802,7 +836,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "YF",
@@ -825,7 +860,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -848,7 +884,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "YF",
@@ -871,7 +908,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -894,7 +932,8 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "YF",
@@ -917,6 +956,7 @@ var intervention_stim_text = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "text"
+    "features": "text",
+    "watermark": "stimuli/ai_watermark.png"
   }
 ]

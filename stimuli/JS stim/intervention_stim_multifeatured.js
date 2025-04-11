@@ -20,7 +20,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "AL",
@@ -43,7 +44,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -66,7 +68,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": 0.3,
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "AL",
@@ -89,7 +92,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -112,7 +116,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "AL/SM",
@@ -135,7 +140,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -158,7 +164,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "AL/SM",
@@ -181,7 +188,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -204,7 +212,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "AL/SM",
@@ -227,7 +236,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -250,7 +260,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "SM",
@@ -273,7 +284,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -296,7 +308,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "SM",
@@ -319,7 +332,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -342,7 +356,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "SM",
@@ -365,7 +380,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -388,7 +404,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "SM",
@@ -411,7 +428,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -434,7 +452,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "SM",
@@ -457,7 +476,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -466,7 +486,7 @@ var intervention_stim_multifeatured = [
     "city": "Irving, TX",
     "text_prompt": "NA",
     "text_stimuli (title)": "Cozy 3 Bed 2.5 Bath entire home near DFW Airport",
-    "text_stimuli": "Welcome to your ideal retreat! This 3-bedroom home features a king bed with an en-suite bathroom, a queen bed with a full bathroom, and a third queen bed with a half bathroom. This home also features a smart TV in every bedroom! Blowup queen mattress is available too to fit 7 if needed. Enjoy the entire house and a large, pet-friendly backyard\u2014great for your furry friends. Relax on the outdoor patio with a table and a charcoal grill. Fast Wi-Fi supports work-from-home needs.",
+    "text_stimuli": "Welcome to your ideal retreat! This 3-bedroom home features a king bed with an en-suite bathroom, a queen bed with a full bathroom, and a third queen bed with a half bathroom. This home also features a smart TV in every bedroom! Blowup queen mattress is available too to fit 7 if needed. Enjoy the entire house and a large, pet-friendly backyardógreat for your furry friends. Relax on the outdoor patio with a table and a charcoal grill. Fast Wi-Fi supports work-from-home needs.",
     "text_type": "Human",
     "text_word_count": 83,
     "gAI_system_texts": "NA",
@@ -480,7 +500,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "TM",
@@ -503,7 +524,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": 0.4,
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -526,7 +548,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": 1.2,
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "TM",
@@ -549,7 +572,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": 99.9,
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -572,7 +596,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "TM",
@@ -595,7 +620,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": 0,
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -618,7 +644,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": 1.7,
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "TM",
@@ -641,7 +668,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": 0.1,
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -664,7 +692,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "TM",
@@ -687,7 +716,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": 0,
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -710,7 +740,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": 0,
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "YF",
@@ -733,7 +764,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -756,7 +788,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "YF",
@@ -779,7 +812,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -802,7 +836,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "YF",
@@ -817,7 +852,7 @@ var intervention_stim_multifeatured = [
     "gAI_system_texts": "Claude",
     "reword": "No",
     "place_prompt": "Create an image of the front view of the described vacation rental listing: Experience South Dakota charm in this completely renovated 1950s ranch home, situated in Watertown's peaceful east side neighborhood. This three-bedroom retreat features mid-century modern furnishings and an open-concept living space perfect for family gatherings. The gourmet kitchen boasts stainless steel appliances and a coffee bar with local roasts. Amenities include smart home features, high-speed fiber internet, and a spacious backyard patio with a gas grill and fire pit for evening entertainment and stargazing. Just minutes from Lake Kampeska and downtown shopping.",
-    "place_stimuli": "stimuli/AI/ai_places_intervention_20/stimuli/AI/ai_places_intervention_20/ai_watertown1.jpg",
+    "place_stimuli": "stimuli/AI/ai_places_intervention_20/ai_watertown.jpg",
     "place_type": "AI",
     "gAI_system_places": "Mage  (General Fast -- Stable Diffusion XL)",
     "face_stimuli": "stimuli/AI/ai_faces_intervention_20/1.S.B.M.png",
@@ -825,7 +860,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -848,7 +884,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "YF",
@@ -871,7 +908,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   },
   {
     "Initials": "",
@@ -894,7 +932,8 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "NA",
     "ai_score": "",
     "listing_type": "Human",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/human_watermark.png"
   },
   {
     "Initials": "YF",
@@ -917,6 +956,7 @@ var intervention_stim_multifeatured = [
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",
     "listing_type": "AI",
-    "features": "multifeatured"
+    "features": "multifeatured",
+    "watermark": "stimuli/ai_watermark.png"
   }
 ]

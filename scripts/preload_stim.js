@@ -1,6 +1,6 @@
-var aidi_aesthetics = ["study_design_images/airbnb_scheme_interface.png", "study_design_images/piggybank.png"]
+var aidi_aesthetics = ["study_design_images/airbnb_scheme_interface.png", "study_design_images/piggybank.png", "study_design_images/ai_use_instructions.jpg"]
 
-var images_icons = ["stimuli/person_icon.png", "stimuli/place_icon.png"]
+var images_icons = ["stimuli/person_icon.png", "stimuli/place_icon.png", "stimuli/human_watermark.png", "stimuli/ai_watermark.png"]
 
 var images_assessment_stim_places = [
 'stimuli/Human/human_places_assessment_24/human_aberdeen.jpg', 

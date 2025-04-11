@@ -305,7 +305,7 @@ var assessment_stim_text = [
     "city": "Riverside, CA",
     "text_prompt": "Create and describe in 75 words a unique vacation rental in Riverside, CA with the title eclectic studio | private courtyard including its private lit courtyard",
     "text_stimuli (title)": "Eclectic Studio | Private Courtyard",
-    "text_stimuli": "Nestled in the heart of Riverside, this vibrant studio offers a fusion of vintage charm and modern comforts. Inside, enjoy bold decor, artistic accents, and a cozy kitchenette. Step outside to your private, illuminated courtyard, adorned with string lights, lush greenery, and a bistro table ñ perfect for evening relaxation or intimate dining. Conveniently located near downtown attractions, trendy cafes, art galleries, local markets, and historic landmarks, this retreat combines serenity with access to Riverside's lively culture.",
+    "text_stimuli": "Nestled in the heart of Riverside, this vibrant studio offers a fusion of vintage charm and modern comforts. Inside, enjoy bold decor, artistic accents, and a cozy kitchenette. Step outside to your private, illuminated courtyard, adorned with string lights, lush greenery, and a bistro table \u2014 perfect for evening relaxation or intimate dining. Conveniently located near downtown attractions, trendy cafes, art galleries, local markets, and historic landmarks, this retreat combines serenity with access to Riverside's lively culture.",
     "text_type": "AI",
     "text_word_count": 70,
     "gAI_system_texts": "ChatGPT",
