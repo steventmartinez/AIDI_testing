@@ -114,6 +114,9 @@ var aidi_baseline_assessment_trials = {
     },
     listing_type: function () {
       return `${jsPsych.evaluateTimelineVariable('listing_type')}`
+    },
+    features: function () {
+      return `${jsPsych.evaluateTimelineVariable('features')}`
     }
   },
   type: jsPsychHtmlButtonResponse,
@@ -262,12 +265,66 @@ var aidi_intervention1_training_exemplars_text = {
           data: {
             trial_id: "aidi_intervention1_training_exemplars_listing_preview_text",
             stage: "intervention_one",
-            listing_type: function () {
-              return `${jsPsych.evaluateTimelineVariable('listing_type')}`
+            rental_company: function () {
+              return `${jsPsych.evaluateTimelineVariable('rental_company')}`
+            },
+            city: function () {
+              return `${jsPsych.evaluateTimelineVariable('city')}`
+            },
+            text_prompt: function () {
+              return `${jsPsych.evaluateTimelineVariable('text_prompt')}`
+            },
+            text_stimuli_title: function () {
+              return `${jsPsych.evaluateTimelineVariable('text_stimuli (title)')}`
             },
             text_stimuli: function () {
               return `${jsPsych.evaluateTimelineVariable('text_stimuli')}`
             },
+            text_type: function () {
+              return `${jsPsych.evaluateTimelineVariable('text_type')}`
+            },
+            text_WC: function () {
+              return `${jsPsych.evaluateTimelineVariable('text_word_count')}`
+            },
+            gAI_system_texts: function () {
+              return `${jsPsych.evaluateTimelineVariable('gAI_system_texts')}`
+            },
+            reword: function () {
+              return `${jsPsych.evaluateTimelineVariable('reword')}`
+            },
+            place_prompt: function () {
+              return `${jsPsych.evaluateTimelineVariable('place_prompt')}`
+            },
+            place_stimuli: function () {
+              return `${jsPsych.evaluateTimelineVariable('place_stimuli')}`
+            },
+            place_type: function () {
+              return `${jsPsych.evaluateTimelineVariable('place_type')}`
+            },
+            gAI_system_places: function () {
+              return `${jsPsych.evaluateTimelineVariable('gAI_system_places')}`
+            },
+            face_stimuli: function () {
+              return `${jsPsych.evaluateTimelineVariable('face_stimuli')}`
+            },
+            face_type: function () {
+              return `${jsPsych.evaluateTimelineVariable('face_type')}`
+            },
+            gAI_system_faces: function () {
+              return `${jsPsych.evaluateTimelineVariable('gAI_system_faces')}`
+            },
+            ai_score: function () {
+              return `${jsPsych.evaluateTimelineVariable('ai_score')}`
+            },
+            listing_type: function () {
+              return `${jsPsych.evaluateTimelineVariable('listing_type')}`
+            },
+            watermark: function () {
+              return `${jsPsych.evaluateTimelineVariable('watermark')}`
+            },
+            features: function () {
+              return `${jsPsych.evaluateTimelineVariable('features')}`
+            }
           },
           type: jsPsychInstructions,
           pages: function(){
@@ -336,6 +393,9 @@ var aidi_intervention1_training_exemplars_text = {
             },
             watermark: function () {
               return `${jsPsych.evaluateTimelineVariable('watermark')}`
+            },
+            features: function () {
+              return `${jsPsych.evaluateTimelineVariable('features')}`
             }
           },
           on_load(params) {
@@ -484,6 +544,9 @@ var aidi_intervention1_training_exemplars_multifeatured = {
           },
           watermark: function () {
             return `${jsPsych.evaluateTimelineVariable('watermark')}`
+          },
+          features: function () {
+            return `${jsPsych.evaluateTimelineVariable('features')}`
           }
         },
         on_load(params) {
@@ -623,6 +686,9 @@ var aidi_assessment2_trials = {
     },
     listing_type: function () {
       return `${jsPsych.evaluateTimelineVariable('listing_type')}`
+    },
+    features: function () {
+      return `${jsPsych.evaluateTimelineVariable('features')}`
     }
 },
 type: jsPsychHtmlButtonResponse,
@@ -837,6 +903,9 @@ var aidi_intervention2_feedback_incentivization_text = {
     },
     listing_type: function () {
       return `${jsPsych.evaluateTimelineVariable('listing_type')}`
+    },
+    features: function () {
+      return `${jsPsych.evaluateTimelineVariable('features')}`
     }
 },
   type: jsPsychHtmlButtonResponse,
@@ -967,6 +1036,9 @@ var aidi_intervention2_feedback_incentivization_multifeatured = {
     },
     listing_type: function () {
       return `${jsPsych.evaluateTimelineVariable('listing_type')}`
+    },
+    features: function () {
+      return `${jsPsych.evaluateTimelineVariable('features')}`
     }
 },
   type: jsPsychHtmlButtonResponse,
@@ -1189,6 +1261,9 @@ var aidi_assessment3_trials = {
     },
     listing_type: function () {
       return `${jsPsych.evaluateTimelineVariable('listing_type')}`
+    },
+    features: function () {
+      return `${jsPsych.evaluateTimelineVariable('features')}`
     }
 },
   type: jsPsychHtmlButtonResponse,
