@@ -17,8 +17,8 @@ var rental_usage = {
         title: "Have you ever used a rental listing site (e.g. Airbnb, Vrbo, Booking.com, etc.) to book a vacation rental?", 
         name: 'rental_yesno', 
         isRequired: true,
-        valueFalse: "No",
         valueTrue: "Yes",
+        valueFalse: "No",
         renderAs: "radio"
       }, 
       {

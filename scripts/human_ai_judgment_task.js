@@ -172,7 +172,7 @@ var aidi_baseline_assessment_confidence = {
     trial_id: "aidi_baseline_assessment_confidence"
 },
   type: jsPsychHtmlSliderResponse,
-  stimulus: "<p><div style ='line-height: 1.25; padding-bottom: 6vh; padding-left: 3vw; padding-right: 3vw; font-size:2.5vw;'>How confident were you in accurately distinguishing the human- and AI-generated rental listings?</div></p>",
+  stimulus: "<p><div style ='line-height: 1.25; padding-bottom: 6vh; padding-left: 3vw; padding-right: 3vw; font-size:2.5vw;'>How confident were you in accurately judging the human- and AI-generated rental listings?</div></p>",
   require_movement: true,
   labels: ['Not all<br>confident', 'Extremely<br>confident'],
   slider_width: 800,
@@ -682,7 +682,7 @@ var aidi_assessment2_confidence = {
     trial_id: "aidi_assessment2_confidence"
 },
   type: jsPsychHtmlSliderResponse,
-  stimulus: "<p><div style ='line-height: 1.25; padding-bottom: 6vh; padding-left: 3vw; padding-right: 3vw; font-size:2.5vw;'>How confident were you in accurately distinguishing the human- and AI-generated rental listings?</div></p>",
+  stimulus: "<p><div style ='line-height: 1.25; padding-bottom: 6vh; padding-left: 3vw; padding-right: 3vw; font-size:2.5vw;'>How confident were you in accurately judging the human- and AI-generated rental listings?</div></p>",
   require_movement: true,
   labels: ['Not all<br>confident', 'Extremely<br>confident'],
   slider_width: 800,
@@ -1248,7 +1248,7 @@ var aidi_assessment3_confidence = {
     trial_id: "aidi_assessment3_confidence"
 },
   type: jsPsychHtmlSliderResponse,
-  stimulus: "<p><div style ='line-height: 1.25; padding-bottom: 6vh; padding-left: 3vw; padding-right: 3vw; font-size:2.5vw;'>How confident were you in accurately distinguishing the human- and AI-generated rental listings?</div></p>",
+  stimulus: "<p><div style ='line-height: 1.25; padding-bottom: 6vh; padding-left: 3vw; padding-right: 3vw; font-size:2.5vw;'>How confident were you in accurately judging the human- and AI-generated rental listings?</div></p>",
   require_movement: true,
   labels: ['Not all<br>confident', 'Extremely<br>confident'],
   slider_width: 800,
