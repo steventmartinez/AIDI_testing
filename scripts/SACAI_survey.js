@@ -1,4 +1,7 @@
 var SACAI_survey = {
+    data: {
+        trial_id: "SACAI_survey",
+    },
     type: jsPsychSurveyLikert,
     preamble: "<p style='font-size: 2.2vw;'><b> Please answer all of the questions on this page. </b></p>",
     questions:  [

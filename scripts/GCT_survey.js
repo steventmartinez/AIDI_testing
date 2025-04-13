@@ -1,4 +1,7 @@
 var GerlichCriticalThinking_survey = {
+  data: {
+    trial_id: "GerlichCriticalThinking_survey",
+},
   type: jsPsychSurveyLikert,
   preamble: "<p style='font-size: 2.2vw; line-height: 1.25em;'><b>Please take a moment to answer the following questions about your habits when searching for and evaluating information.</b></p>",
   questions:  [

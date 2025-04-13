@@ -198,14 +198,13 @@ var enter_pid = {
     document.body.style.backgroundColor = '#F0F0F0'
 },
 data: {
-        trial_id: "enter_pid"
-    },
+    startdate: fulldate,
+    trial_id: "enter_pid"
+  },
   type: jsPsychSurveyText,
   questions: [{prompt: "<p><div style ='font-size:50px; line-height: 2em;'>Please enter your participant ID.</div></p>", 
   name: 'PID', 
   required: true}],
-  data: {startdate: fulldate},
-  trial_duration: 0,
   on_finish: function(data) {
   var response = data.response;
   jsPsych.data.addProperties({
@@ -417,13 +416,12 @@ timeline.push(final_trial_note)
 
 var wait5sec = {
      type: jsPsychHtmlKeyboardResponse,
-     stimulus: '<p>Please wait while your data is being saved...</p>',
+     stimulus: "<p style='text-align: center; font-size: 2.5vw;'><b>Please wait while your data is being saved...<b></p>",
      choices: "NO_KEYS",
      trial_duration: 5000,
      };
 
 timeline.push(wait5sec)
-
 
 
 //------------------------------------//

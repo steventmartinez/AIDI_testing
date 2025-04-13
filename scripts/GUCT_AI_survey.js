@@ -1,4 +1,7 @@
 var GerlichUseandCriticalThinking_survey_AI = {
+  data: {
+    trial_id: "GerlichUseandCriticalThinking_survey_AI",
+},
   type: jsPsychSurveyLikert,
   preamble: "<p style='font-size: 2.2vw; line-height: 1.25em;'><b>Please take a moment to answer the following questions about your habits when searching for and evaluating information provided by AI tools.</b></p>",
   questions:  [

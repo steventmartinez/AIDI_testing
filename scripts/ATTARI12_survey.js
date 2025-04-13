@@ -24,6 +24,9 @@ var AI_surveys_intro = {
 // ATTARI12 Survey
 //------------------------------------//
 var ATTARI12_survey = {
+  data: {
+    trial_id: "ATTARI12_survey",
+},
     type: jsPsychSurveyLikert,
     preamble: "<p style='font-size: 2.2vw;'><b> Please answer all of the questions on this page. </b></p>",
     questions:  [
