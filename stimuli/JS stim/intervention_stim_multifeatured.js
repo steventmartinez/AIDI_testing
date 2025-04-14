@@ -486,7 +486,7 @@ var intervention_stim_multifeatured = [
     "city": "Irving, TX",
     "text_prompt": "NA",
     "text_stimuli (title)": "Cozy 3 Bed 2.5 Bath entire home near DFW Airport",
-    "text_stimuli": "Welcome to your ideal retreat! This 3-bedroom home features a king bed with an en-suite bathroom, a queen bed with a full bathroom, and a third queen bed with a half bathroom. This home also features a smart TV in every bedroom! Blowup queen mattress is available too to fit 7 if needed. Enjoy the entire house and a large, pet-friendly backyardógreat for your furry friends. Relax on the outdoor patio with a table and a charcoal grill. Fast Wi-Fi supports work-from-home needs.",
+    "text_stimuli": "Welcome to your ideal retreat! This 3-bedroom home features a king bed with an en-suite bathroom, a queen bed with a full bathroom, and a third queen bed with a half bathroom. This home also features a smart TV in every bedroom! Blowup queen mattress is available too to fit 7 if needed. Enjoy the entire house and a large, pet-friendly backyard\u2014great for your furry friends. Relax on the outdoor patio with a table and a charcoal grill. Fast Wi-Fi supports work-from-home needs.",
     "text_type": "Human",
     "text_word_count": 83,
     "gAI_system_texts": "NA",

@@ -834,7 +834,7 @@ var assessment_stim_multifeatured = [
     "city": "Olympia, WA",
     "text_prompt": "Create and describe in 75 words a unique vacation rental in Olympia, WA with the title \"Cozy Lake Front Cottage - Family & Pet Friendly!\" including a detail about the property.",
     "text_stimuli (title)": "Cozy Lake Front Cottage - Family & Pet Friendly!",
-    "text_stimuli": "Cozy Lake Front Cottage - Family & Pet Friendly!\" is a charming retreat nestled on the shores of Black Lake, just 15 minutes from downtown Olympia, WA. This quaint two-bedroom cottage features a spacious deck overlooking the water, perfect for outdoor dining and stargazing. The property includes a private dock for fishing or launching kayaks, and a fenced yard where pets can roam freely. Inside, a stone fireplace warms the open-concept living area, while large windows offer stunning lake views year-round.",
+    "text_stimuli": "\"Cozy Lake Front Cottage - Family & Pet Friendly!\" is a charming retreat nestled on the shores of Black Lake, just 15 minutes from downtown Olympia, WA. This quaint two-bedroom cottage features a spacious deck overlooking the water, perfect for outdoor dining and stargazing. The property includes a private dock for fishing or launching kayaks, and a fenced yard where pets can roam freely. Inside, a stone fireplace warms the open-concept living area, while large windows offer stunning lake views year-round.",
     "text_type": "AI",
     "text_word_count": 79,
     "gAI_system_texts": "Claude",
