@@ -59,7 +59,7 @@ var AI_use = {
         {
           type: 'text',
           visibleIf: '{AIuse_endorsement} anyof ["Generating text", "Generating images/videos"]',
-          title: "Please estimate the number of sessions (# of threads/topics started) on your primary AI platform.", 
+          title: "Please estimate the number of sessions (# of threads/topics started) on your primary AI platform in the previous 30 days.", 
           name: 'AIuse_estimate_sessions',
           placeholder: "Enter whole numbers only (e.g., 3, 14)", 
           size: 33, 
@@ -68,7 +68,7 @@ var AI_use = {
         {
           type: 'text',
           visibleIf: '{AIuse_endorsement} anyof ["Generating text", "Generating images/videos"]',
-          title: "Please estimate the number of searches (# of independent searches) on your primary AI platform.", 
+          title: "Please estimate the number of searches (# of independent searches) on your primary AI platform in the previous 30 days.", 
           name: 'AIuse_estimate_searches',
           placeholder: "Enter whole numbers only (e.g., 3, 14)", 
           size: 33, 
@@ -93,7 +93,7 @@ var AI_use = {
       {
         type: 'text',
         visibleIf: '{AIuse_endorsement} anyof ["Generating text", "Generating images/videos"]',
-        title: "Please report the number of sessions (# of threads/topics started) on your primary AI platform.", 
+        title: "Please report the number of sessions (# of threads/topics started) on your primary AI platform in the previous 30 days.", 
         name: 'AIuse_actual_sessions',
         placeholder: "Enter whole numbers only (e.g., 3, 14)", 
         size: 33, 
