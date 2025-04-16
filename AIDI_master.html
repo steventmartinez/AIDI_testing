@@ -32,7 +32,7 @@
     <!-- Load task scripts -->
     <script src="scripts/stim_randomization.js"></script>
     <script src="scripts/preload_stim.js"></script>
-    <script src="scripts/human_ai_judgment_task.js"></script>
+    <script src="scripts/human_ai_judgment_task_human_left_ai_right.js"></script>
     <script src="scripts/rental_usage.js"></script>
     <script src="scripts/MIST-8.js"></script>
     <script src="scripts/MTES_shortened.js"></script>
@@ -136,11 +136,13 @@ var timeline = [];
     
     
   // /*Tag data output with Prolific information*/
-  //   jsPsych.data.addProperties({
-  //     subject_id: subject_id,
-  //     study_id: study_id,
-  //     session_id: session_id
-  //   });
+    jsPsych.data.addProperties({
+      button_order_text: 'Human_left, AI_right',
+      script_name: "human_ai_judgment_task_human_left_ai_right"
+      // subject_id: subject_id,
+      // study_id: study_id,
+      // session_id: session_id
+    });
 
 
  /* init connection with pavlovia.org */
@@ -328,10 +330,11 @@ var demographics = {
       {
         type: 'text',
         title: 'How old are you?', 
-        name: 'age', 
+        name: 'demo_age', 
         size: 25,
         placeholder: "Enter whole numbers only", 
         isRequired: true,
+        inputType: "number"
       },
       {
         type: 'radiogroup',
@@ -364,6 +367,43 @@ var demographics = {
       },   
   ],
 },
+on_finish: function (data) {
+
+    for (const key in data.response) {
+
+      /*Store answer for "demo_age" question*/
+      if (`${key}` == "demo_age") {
+        demo_age_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "demo_ed_self" question*/
+      if (`${key}` == "demo_ed_self") {
+        demo_ed_self_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "demo_race_ethnicity" question*/
+      if (`${key}` == "demo_race_ethnicity") {
+        demo_race_ethnicity_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "demo_gender" question*/
+      if (`${key}` == "demo_gender") {
+        demo_gender_answer = `${data.response[key]}`
+      }
+    }
+
+    //Add a column called "demo_age" that stores the answer
+    data.demo_age_response = demo_age_answer
+
+    //Add a column called "demo_ed_self" that stores the answer
+    data.demo_ed_self_response = demo_ed_self_answer
+
+    //Add a column called "demo_race_ethnicity" that stores the answer
+    data.demo_race_ethnicity_response = demo_race_ethnicity_answer
+
+    //Add a column called "demo_gender" that stores the answer
+    data.demo_gender_response = demo_gender_answer
+  }
 }
 
 
@@ -408,17 +448,21 @@ var final_trial_note = {
     },
     button_label_next: "Next",
     show_clickable_nav: true,
-    css_classes: ['instructions_line_height'],
+    css_classes: ['instructions_line_height', 'custom_padding'],
     }
 
 timeline.push(final_trial_note)
 
 
 var wait5sec = {
+  data: {
+        trial_id: "wait5sec"
+    },
      type: jsPsychHtmlKeyboardResponse,
      stimulus: "<p style='text-align: center; font-size: 2.5vw;'><b>Please wait while your data is being saved...<b></p>",
      choices: "NO_KEYS",
      trial_duration: 5000,
+     css_classes: ['custom_padding']
      };
 
 timeline.push(wait5sec)

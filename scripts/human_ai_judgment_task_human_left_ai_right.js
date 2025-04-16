@@ -122,7 +122,7 @@ var aidi_baseline_assessment_trials = {
   type: jsPsychHtmlButtonResponse,
   stimulus: () => {
     return `<img src="study_design_images/airbnb_scheme_interface.png" <div style= "position:fixed; width: 59vw; height: 87vh; left: 21.5vw; top: 0vh;"></img>` +
-      `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16vh;"></img>` +
+      `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
       `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
       `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
   },
@@ -408,7 +408,7 @@ var aidi_intervention1_training_exemplars_text = {
           type: jsPsychHtmlButtonResponse,
           stimulus: () => {
             return `<img src="study_design_images/airbnb_scheme_interface.png" <div style= "position:fixed; width: 59vw; height: 87vh; left: 21.5vw; top: 0vh;"></img>` +
-            `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16vh;"></img>` +
+            `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
             `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
             `<img src="${jsPsych.evaluateTimelineVariable('watermark')}" <div style= "position:fixed; width: 21vw; height: 26vh; left: 0vw; top: 30vh;"></img>` +
             // `<img src="${jsPsych.evaluateTimelineVariable('watermark')}" <div style= "position:fixed; width: 12.5vw; height: 16vh; left: 5vw; top: 2vh;"></img>` +
@@ -559,7 +559,7 @@ var aidi_intervention1_training_exemplars_multifeatured = {
         type: jsPsychHtmlButtonResponse,
         stimulus: () => {
           return `<img src="study_design_images/airbnb_scheme_interface.png" <div style= "position:fixed; width: 59vw; height: 87vh; left: 21.5vw; top: 0vh;"></img>` +
-          `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16vh;"></img>` +
+          `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
           `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
           `<img src="${jsPsych.evaluateTimelineVariable('watermark')}" <div style= "position:fixed; width: 21vw; height: 26vh; left: 0vw; top: 30vh;"></img>` +
           `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
@@ -694,7 +694,7 @@ var aidi_assessment2_trials = {
 type: jsPsychHtmlButtonResponse,
 stimulus: () => {
   return `<img src="study_design_images/airbnb_scheme_interface.png" <div style= "position:fixed; width: 59vw; height: 87vh; left: 21.5vw; top: 0vh;"></img>` +
-    `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16vh;"></img>` +
+    `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
     `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
     `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
 },
@@ -913,7 +913,7 @@ var aidi_intervention2_feedback_incentivization_text = {
     return `<img src="study_design_images/airbnb_scheme_interface.png" <div style= "position:fixed; width: 59vw; height: 87vh; left: 21.5vw; top: 0vh;"></img>` +
     `<img src="study_design_images/piggybank.png" <div style= "position:fixed; width: 13vw; height: 20vh; left: 1vw; bottom: 0vh;"></img>` +
     `<p><div style ='font-size: 2vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 15vw; height: 9vh; position: fixed; left: 0vw; bottom: 16vh; border: .3vw solid transparent; border-radius: 1vw;'>Total earnings <b>$${earnings}</b></p>` +
-    `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16vh;"></img>` +
+    `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
     `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
     `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
   },
@@ -1046,7 +1046,7 @@ var aidi_intervention2_feedback_incentivization_multifeatured = {
     return `<img src="study_design_images/airbnb_scheme_interface.png" <div style= "position:fixed; width: 59vw; height: 87vh; left: 21.5vw; top: 0vh;"></img>` +
     `<img src="study_design_images/piggybank.png" <div style= "position:fixed; width: 13vw; height: 20vh; left: 1vw; bottom: 0vh;"></img>` +
     `<p><div style ='font-size: 2vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 15vw; height: 9vh; position: fixed; left: 0vw; bottom: 16vh; border: .3vw solid transparent; border-radius: 1vw;'>Total earnings <b>$${earnings}</b></p>` +
-    `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16vh;"></img>` +
+    `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
     `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
     `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
   },
@@ -1269,7 +1269,7 @@ var aidi_assessment3_trials = {
   type: jsPsychHtmlButtonResponse,
   stimulus: () => {
     return `<img src="study_design_images/airbnb_scheme_interface.png" <div style= "position:fixed; width: 59vw; height: 87vh; left: 21.5vw; top: 0vh;"></img>` +
-      `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16vh;"></img>` +
+      `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
       `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
       `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
   },

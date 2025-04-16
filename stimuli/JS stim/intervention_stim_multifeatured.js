@@ -759,7 +759,7 @@ var intervention_stim_multifeatured = [
     "place_stimuli": "stimuli/AI/ai_places_intervention_20/ai_appleton.jpg",
     "place_type": "AI",
     "gAI_system_places": "Mage  (General Fast -- Stable Diffusion XL)",
-    "face_stimuli": "stimuli/AI/ai_faces_intervention_20/45.S.B.M.png",
+    "face_stimuli": "stimuli/AI/ai_faces_intervention_20/20.S.B.M.png",
     "face_type": "AI",
     "gAI_system_faces": "StyleGAN2",
     "ai_score": "",

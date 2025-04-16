@@ -185,7 +185,7 @@ var images_intervention_stim_faces = [
 'stimuli/AI/ai_faces_intervention_20/38.S.B.F.png', 
 'stimuli/AI/ai_faces_intervention_20/40.S.W.F.png', 
 'stimuli/AI/ai_faces_intervention_20/42.S.EA.M.png', 
-'stimuli/AI/ai_faces_intervention_20/45.S.B.M.png', 
+'stimuli/AI/ai_faces_intervention_20/20.S.B.M.png', 
 'stimuli/AI/ai_faces_intervention_20/45.S.EA.F.png', 
 'stimuli/AI/ai_faces_intervention_20/45.S.W.F.png', 
 'stimuli/AI/ai_faces_intervention_20/50.S.SA.F.png',

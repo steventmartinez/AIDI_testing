@@ -29,7 +29,7 @@ var AI_use = {
           // visibleIf: '{AIuse_endorsement} anyof ["Generating text", "Searching for information"]',
           title: 'Which AI platforms have you used to write/revise texts?',
           choices: ["OpenAI ChatGPT", "Anthropic Claude"],
-          name: "AI_platforms_texts",
+          name: "AIuse_platforms_texts",
           showOtherItem: true,
           isRequired: true
         },
@@ -39,7 +39,7 @@ var AI_use = {
           // visibleIf: '{AIuse_endorsement} anyof ["Generating text", "Searching for information"]',
           title: 'Which AI platforms have you used to generate images/videos?',
           choices: ["Google Gemini", "Mage"],
-          name: "AI_platforms_images",
+          name: "AIuse_platforms_images",
           showOtherItem: true,
           isRequired: true
         }
@@ -51,7 +51,7 @@ var AI_use = {
           type: 'text',
           visibleIf: '{AIuse_endorsement} anyof ["Generating text", "Generating images/videos"]',
           title: "What is your primary AI platform?", 
-          name: 'AI_platform',
+          name: 'AIuse_primary_platform',
           placeholder: "Enter name of primary AI platform", 
           size: 33, 
           isRequired: true,
@@ -64,6 +64,8 @@ var AI_use = {
           placeholder: "Enter whole numbers only (e.g., 3, 14)", 
           size: 33, 
           isRequired: true,
+          inputType: "number",
+          min: 0,
         },
         {
           type: 'text',
@@ -73,6 +75,8 @@ var AI_use = {
           placeholder: "Enter whole numbers only (e.g., 3, 14)", 
           size: 33, 
           isRequired: true,
+          inputType: "number",
+          min: 0,
         },
       ]
     }, {
@@ -98,8 +102,96 @@ var AI_use = {
         placeholder: "Enter whole numbers only (e.g., 3, 14)", 
         size: 33, 
         isRequired: true,
+        inputType: "number",
+        min: 0,
       },
     ]
     }]
   },
+  on_finish: function (data) {
+
+    for (const key in data.response) {
+
+      /*Store answer for "AIuse_endorsement" question*/
+      if (`${key}` == "AIuse_endorsement") {
+        AIuse_endorsement_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "AIuse_endorsement-Comment" question*/
+      if (`${key}` == "AIuse_endorsement-Comment") {
+        AIuse_endorsement_other_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "AIuse_platforms_texts" question*/
+      if (`${key}` == "AIuse_platforms_texts") {
+        AIuse_platforms_texts_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "AIuse_platforms_texts-Comment" question*/
+      if (`${key}` == "AIuse_platforms_texts-Comment") {
+        AIuse_platforms_texts_other_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "AIuse_platforms_images" question*/
+      if (`${key}` == "AIuse_platforms_images") {
+        AIuse_platforms_images_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "AIuse_platforms_images-Comment" question*/
+      if (`${key}` == "AIuse_platforms_images-Comment") {
+        AIuse_platforms_images_other_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "AIuse_primary_platform" question*/
+      if (`${key}` == "AIuse_primary_platform") {
+        AIuse_primary_platform_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "AIuse_estimate_sessions" question*/
+      if (`${key}` == "AIuse_estimate_sessions") {
+        AIuse_estimate_sessions_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "AIuse_estimate_searches" question*/
+      if (`${key}` == "AIuse_estimate_searches") {
+        AIuse_estimate_searches_answer = `${data.response[key]}`
+      }
+
+      /*Store answer for "AIuse_actual_sessions" question*/
+      if (`${key}` == "AIuse_actual_sessions") {
+        AIuse_actual_sessions_answer = `${data.response[key]}`
+      }
+  }
+
+    //Add a column called "AIuse_endorsement_response" that stores the answer
+    data.AIuse_endorsement_response = AIuse_endorsement_answer
+
+    //Add a column called "AIuse_endorsement_other_response" that stores the answer
+    data.AIuse_endorsement_other_response = AIuse_endorsement_other_answer
+
+    //Add a column called "AIuse_platforms_texts_response" that stores the answer
+    data.AIuse_platforms_texts_response = AIuse_platforms_texts_answer
+
+    //Add a column called "AIuse_platforms_texts_other_response" that stores the answer
+    data.AIuse_platforms_texts_other_response = AIuse_platforms_texts_other_answer
+
+    //Add a column called "AIuse_platforms_images_response" that stores the answer
+    data.AIuse_platforms_images_response = AIuse_platforms_images_answer
+
+    //Add a column called "AIuse_platforms_images_other_response" that stores the answer
+    data.AIuse_platforms_images_other_response = AIuse_platforms_images_other_answer
+
+    //Add a column called "AIuse_primary_platform_response" that stores the answer
+    data.AIuse_primary_platform_response = AIuse_primary_platform_answer
+
+    //Add a column called "AIuse_estimate_sessions_response" that stores the answer
+    data.AIuse_estimate_sessions_response = AIuse_estimate_sessions_answer
+
+    //Add a column called "AIuse_estimate_searches_response" that stores the answer
+    data.AIuse_estimate_searches_response = AIuse_estimate_searches_answer
+
+    //Add a column called "AIuse_actual_sessions_response" that stores the answer
+    data.AIuse_actual_sessions_response = AIuse_actual_sessions_answer
+
+}
 };
