@@ -170,13 +170,13 @@ timeline.push ({
 
 
 /*Full-screen!*/
-timeline.push({
-    data: {
-        trial_id: "full_screen"
-    },
-    type: jsPsychFullscreen,
-    fullscreen_mode: true
-});
+// timeline.push({
+//     data: {
+//         trial_id: "full_screen"
+//     },
+//     type: jsPsychFullscreen,
+//     fullscreen_mode: true
+// });
 
 
 //------------------------------------//
@@ -414,22 +414,19 @@ on_finish: function (data) {
 var consenting_procedure = {
     timeline: [enter_pid, welcome, consent_forms1, consent_forms2, begin_experiment, demographics],
 }
-timeline.push(consenting_procedure);
+// timeline.push(consenting_procedure);
 
 
 //------------------------------------//
 // Concatenate timelines
 //------------------------------------//
-timeline = timeline.concat(human_ai_task); // Human/AI judgment task
-timeline = timeline.concat(GerlichCriticalThinking_survey); // GCT survey
-timeline = timeline.concat(ATTARI12_survey_procedure); // ATTARI12 survey
-timeline = timeline.concat(GerlichUseandCriticalThinking_survey_AI); // GUCT_AI survey
-timeline = timeline.concat(SACAI_survey); // SACAI survey
+// timeline = timeline.concat(human_ai_task); // Human/AI judgment task
+// timeline = timeline.concat(GerlichCriticalThinking_survey); // GCT survey
+// timeline = timeline.concat(ATTARI12_survey_procedure); // ATTARI12 survey
+// timeline = timeline.concat(GerlichUseandCriticalThinking_survey_AI); // GUCT_AI survey
+// timeline = timeline.concat(SACAI_survey); // SACAI survey
 timeline = timeline.concat(AI_use); // AI use survey
-timeline = timeline.concat(rental_usage); // Rental Usage questions
-// timeline = timeline.concat(MIST_8_survey); // MIST-8 survey
-// timeline = timeline.concat(MTES_survey); // MTES Survey
-
+// timeline = timeline.concat(rental_usage); // Rental Usage questions
 
 
 //------------------------------------//
