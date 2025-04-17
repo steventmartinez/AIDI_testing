@@ -110,7 +110,9 @@ var AI_use = {
   },
   on_finish: function (data) {
 
-    for (const key in data.response) {
+      // console.log(data.response.length)
+      for (const key in data.response) {
+
       // console.log(`${key}: ${data.response[key]}`);
 
       /*Store answer for "AIuse_endorsement" question*/
@@ -148,7 +150,8 @@ var AI_use = {
         AIuse_actual_sessions_answer = `${data.response[key]}`
       }
 
-}
+      }
+
     //Add a column called "AIuse_endorsement_response" that stores the answer
     data.AIuse_endorsement_response = AIuse_endorsement_answer
 

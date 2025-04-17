@@ -195,7 +195,7 @@ var aidi_baseline_assessment_conclusion = {
 },
   type: jsPsychInstructions,
   pages: function(){
-    pageOne =  "<p><div style ='font-size:5vw; margin-bottom: 5vh;'>Great work.</div></p>"+
+    pageOne =  "<p><div style ='font-size:5vw; margin-bottom: 5vh;'>Great job!</div></p>"+
     '<br><p><div style ="font-size:2.5vw;">Click <b>Next</b> to continue to Part 2.</div></p>' 
    return [pageOne]
 },
@@ -1075,6 +1075,9 @@ var aidi_intervention2_feedback_incentivization_multifeatured = {
         }
         //Add a column called "correct_response" that stores the value in the "correct" variable
         data.correct_response = correct
+
+        //Add a column called "bonus_earnings" that stores the value in the "earnings" variable
+        data.bonus_earnings = earnings
   }
 }
 
@@ -1344,7 +1347,7 @@ var aidi_assessment3_conclusion = {
 },
     type: jsPsychInstructions,
     pages: function(){
-      pageOne =  "<p><div style ='font-size:5vw; margin-bottom: 5vh;'>Great job.</div></p>"+
+      pageOne =  "<p><div style ='font-size:5vw; margin-bottom: 5vh;'>Great job!</div></p>"+
       "<br><p><div style ='font-size:2.5vw; line-height: 1.25'>You've completed this task! Please click <b>Next</b> to answer some questions.</div></p>"
      return [pageOne]
   },

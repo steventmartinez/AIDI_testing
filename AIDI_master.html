@@ -427,8 +427,6 @@ timeline = timeline.concat(GerlichUseandCriticalThinking_survey_AI); // GUCT_AI 
 timeline = timeline.concat(SACAI_survey); // SACAI survey
 timeline = timeline.concat(AI_use); // AI use survey
 timeline = timeline.concat(rental_usage); // Rental Usage questions
-// timeline = timeline.concat(MIST_8_survey); // MIST-8 survey
-// timeline = timeline.concat(MTES_survey); // MTES Survey
 
 
 
@@ -441,7 +439,8 @@ var final_trial_note = {
     },
     type: jsPsychInstructions,
     pages: function(){
-    pageOne = "<p><div style ='font-size:40px;'>The experiment is almost over!</div></p>" +
+    pageOne = '<img src="study_design_images/100_percent_progress.png" style="height: 13vh; width: 35vw;"></img>' +
+        "<p><div style ='font-size:40px;'>The experiment is now complete!</div></p>" +
         "<p><div style ='font-size:40px;'>In the next screen, your data will be saved and you will be redirected back to the Prolific page.</div></p>" + 
         "<p><div style ='font-size:40px;'>Press <b>Next</b> to finish the experiment.</div></p>"
     return [pageOne]
@@ -451,7 +450,7 @@ var final_trial_note = {
     css_classes: ['instructions_line_height', 'custom_padding'],
     }
 
-// timeline.push(final_trial_note)
+timeline.push(final_trial_note)
 
 
 var wait5sec = {
@@ -465,7 +464,7 @@ var wait5sec = {
      css_classes: ['custom_padding']
      };
 
-// timeline.push(wait5sec)
+timeline.push(wait5sec)
 
 
 //------------------------------------//

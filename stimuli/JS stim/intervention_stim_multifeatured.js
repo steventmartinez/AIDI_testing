@@ -366,7 +366,7 @@ var intervention_stim_multifeatured = [
     "city": "Oakland, CA",
     "text_prompt": "Create and describe in 75 words a unique vacation rental in Oakland, CA with the title Luxury Travelers Retreat with Breathtaking Views including its French doors allowing open air",
     "text_stimuli (title)": "Luxury Travelers Retreat with Breathtaking Views",
-    "text_stimuli": "Perched in the Oakland Hills, this sophisticated retreat features wall-to-wall French doors that open to a stunning panorama of the San Francisco Bay. The open-concept living space seamlessly blends indoor and outdoor living, with a wraparound deck perfect for sunset viewing. The modern interior showcases designer furnishings, a gourmet kitchen, and floor-to-ceiling windows that frame the Golden Gate Bridge. Minutes from Redwood Regional Park trails, Montclair Village shops, and downtown Oakland's vibrant dining scene. Easy BART access to San Francisco and Berkeley's gourmet ghetto.",
+    "text_stimuli": "Perched in the Oakland Hills, this elegant vacation rental offers sweeping views of the Bay Area skyline. French doors open wide to a private deck, inviting fresh air and California sunshine into the open-concept living space. Designer interiors, a spa-style bathroom, and gourmet kitchen create a luxurious home away from home. Perfect for couples or solo travelers seeking tranquility, style, and proximity to San Francisco and vibrant Oakland culture.",
     "text_type": "AI",
     "text_word_count": 73,
     "gAI_system_texts": "ChatGPT",

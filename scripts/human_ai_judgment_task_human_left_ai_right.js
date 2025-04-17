@@ -22,6 +22,11 @@ var aidi_task_intro = {
 }
 
 
+
+/*Define "trial_count" global variable that will be used to count trials*/
+let trial_count = 1
+
+
                                                       //---------------------//
                                                       // Baseline Procedure
                                                       //---------------------//
@@ -124,13 +129,18 @@ var aidi_baseline_assessment_trials = {
     return `<img src="study_design_images/airbnb_scheme_interface.png" <div style= "position:fixed; width: 59vw; height: 87vh; left: 21.5vw; top: 0vh;"></img>` +
       `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
       `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
-      `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
+      `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>` +
+      `<p><div style ='font-size: 2.9vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 9vw; height: 7vh; position: fixed; right: 0vw; top: 1vh; border: .3vw solid transparent; border-radius: 1vw;'><b>${trial_count}/32<b></p>`
   },
   choices: ["<p style ='font-size:2vw; color: black; position: fixed; left: 38vw; bottom: 1.3vh;'><b>Human</b></p>", "<p style ='font-size: 2vw; color: black; position: fixed; right: 41vw; bottom: 1.3vh'><b>AI</b></p>"],
   button_html: (choice) => {
     return `<button class="jspsych-btn" style="width: 15vw; height: 8vh; position: relative; top: 42vh;">${choice}</button>`
     },
     on_finish: function (data) {
+
+      /* Add trial counter*/
+      trial_count += 1
+
         if (data.response == 0) {
             ppt_response = "Human"
         }
@@ -150,6 +160,11 @@ var aidi_baseline_assessment_trials = {
         }
         //Add a column called "correct_response" that stores the value in the "correct" variable
         data.correct_response = correct
+
+        /* Reset trial counter*/
+        if (trial_count > 32) {
+          trial_count = 1
+      }
   }
 }
 
@@ -195,12 +210,14 @@ var aidi_baseline_assessment_conclusion = {
 },
   type: jsPsychInstructions,
   pages: function(){
-    pageOne =  "<p><div style ='font-size:5vw; margin-bottom: 5vh;'>Great work.</div></p>"+
+    pageOne =  '<img src="study_design_images/25_percent_progress.png" style="height: 13vh; width: 35vw; margin-bottom: 7vh;"></img>' +
+    "<p><div style ='font-size:5vw; margin-bottom: 5vh;'>Great job!</div></p>"+
     '<br><p><div style ="font-size:2.5vw;">Click <b>Next</b> to continue to Part 2.</div></p>' 
    return [pageOne]
 },
 show_clickable_nav: true
 }
+
 
 
 //------------------------------------//
@@ -241,11 +258,6 @@ var aidi_intervention1_instructions = {
     "<p><div style ='line-height: 1.25; font-size:2.5vw;'>To provide enough time for reading, the <b>Next</b> button will appear after 10 seconds.</div></p>" +
     "<p><div style ='line-height: 1.25; font-size:2.5vw;'>Try your best to use these examples to learn about the differences between human and AI-generated listings.</div></p>" +
     '<p><div style ="line-height: 1.25; font-size:2.5vw;">Click <b>Next</b> when you are ready to begin.</div></p>'
-      // "<p><div style ='line-height: 1.25; font-size:2.5vw;'>The example rental listings will stay on the screen until you click <b>Next</b>.</div></p>" +
-      // "<p><div style ='line-height: 1.25; font-size:2.5vw;'>First, you will see examples of listings with just text.</div></p>" +
-      // "<p><div style ='line-height: 1.25; font-size:2.5vw;'>Then you will see examples of listings with text and images.</div></p>" +
-      // "<p><div style ='line-height: 1.25; font-size:2.5vw;'>Try your best to use these examples to learn about the differences between human and AI-generated listings.</div></p>" +
-      // '<p><div style ="line-height: 1.25; font-size:2.5vw;">Click <b>Next</b> when you are ready to begin.</div></p>';
     return [pageOne, pageTwo];
   },
   show_clickable_nav: true,
@@ -403,7 +415,16 @@ var aidi_intervention1_training_exemplars_text = {
             button.style.visibility = "hidden";
             setTimeout(function() {
             button.style.visibility = "visible";
-            }, 1000);
+            }, 0);
+          },
+          on_finish: function () {
+            /* Add trial counter*/
+            trial_count += 1
+
+            /* Reset trial counter*/
+            if (trial_count > 20) {
+              trial_count = 1
+            }
           },
           type: jsPsychHtmlButtonResponse,
           stimulus: () => {
@@ -411,8 +432,8 @@ var aidi_intervention1_training_exemplars_text = {
             `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
             `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
             `<img src="${jsPsych.evaluateTimelineVariable('watermark')}" <div style= "position:fixed; width: 21vw; height: 26vh; left: 0vw; top: 30vh;"></img>` +
-            // `<img src="${jsPsych.evaluateTimelineVariable('watermark')}" <div style= "position:fixed; width: 12.5vw; height: 16vh; left: 5vw; top: 2vh;"></img>` +
-            `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
+            `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>` +
+            `<p><div style ='font-size: 2.9vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 9vw; height: 7vh; position: fixed; right: 0vw; top: 1vh; border: .3vw solid transparent; border-radius: 1vw;'><b>${trial_count}/20<b></p>`
           },
           choices: ["<p style ='font-size:2vw; color: black; position: fixed; left: 87vw; bottom: 2.7vh;'><b>Next</b></p>"],
           button_html: (choice) => {
@@ -554,7 +575,16 @@ var aidi_intervention1_training_exemplars_multifeatured = {
           button.style.visibility = "hidden";
           setTimeout(function() {
           button.style.visibility = "visible";
-          }, 1000);
+          }, 0);
+        },
+        on_finish: function () {
+          /* Add trial counter*/
+          trial_count += 1
+
+          /* Reset trial counter*/
+          if (trial_count > 20) {
+            trial_count = 1
+          }
         },
         type: jsPsychHtmlButtonResponse,
         stimulus: () => {
@@ -562,7 +592,8 @@ var aidi_intervention1_training_exemplars_multifeatured = {
           `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
           `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
           `<img src="${jsPsych.evaluateTimelineVariable('watermark')}" <div style= "position:fixed; width: 21vw; height: 26vh; left: 0vw; top: 30vh;"></img>` +
-          `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
+          `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>` +
+          `<p><div style ='font-size: 2.9vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 9vw; height: 7vh; position: fixed; right: 0vw; top: 1vh; border: .3vw solid transparent; border-radius: 1vw;'><b>${trial_count}/20<b></p>`
         },
         choices: ["<p style ='font-size:2vw; color: black; position: fixed; left: 87vw; bottom: 2.7vh;'><b>Next</b></p>"],
         button_html: (choice) => {
@@ -696,13 +727,18 @@ stimulus: () => {
   return `<img src="study_design_images/airbnb_scheme_interface.png" <div style= "position:fixed; width: 59vw; height: 87vh; left: 21.5vw; top: 0vh;"></img>` +
     `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
     `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
-    `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
+    `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>` +
+    `<p><div style ='font-size: 2.9vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 9vw; height: 7vh; position: fixed; right: 0vw; top: 1vh; border: .3vw solid transparent; border-radius: 1vw;'><b>${trial_count}/32<b></p>`
 },
 choices: ["<p style ='font-size:2vw; color: black; position: fixed; left: 38vw; bottom: 1.3vh;'><b>Human</b></p>", "<p style ='font-size: 2vw; color: black; position: fixed; right: 41vw; bottom: 1.3vh'><b>AI</b></p>"],
 button_html: (choice) => {
   return `<button class="jspsych-btn" style="width: 15vw; height: 8vh; position: relative; top: 42vh;">${choice}</button>`
   },
   on_finish: function (data) {
+
+      /* Add trial counter*/
+      trial_count += 1
+
       if (data.response == 0) {
           ppt_response = "Human"
       }
@@ -722,6 +758,11 @@ button_html: (choice) => {
       }
       //Add a column called "correct_response" that stores the value in the "correct" variable
       data.correct_response = correct
+
+      /* Reset trial counter*/
+      if (trial_count > 32) {
+        trial_count = 1
+      }
 }
 }
 
@@ -769,12 +810,14 @@ var aidi_assessment2_conclusion = {
 },
     type: jsPsychInstructions,
     pages: function(){
-      pageOne =  "<p><div style ='font-size:5vw; margin-bottom: 5vh;'>Great job!</div></p>"+
+      pageOne =  '<img src="study_design_images/50_percent_progress.png" style="height: 13vh; width: 35vw; margin-bottom: 7vh;"></img>' +
+      "<p><div style ='font-size:5vw; margin-bottom: 5vh;'>Great job!</div></p>"+
       '<br><p><div style ="font-size:2.5vw;">Click <b>Next</b> to continue to Part 3.</div></p>' 
      return [pageOne]
   },
   show_clickable_nav: true
 }
+
 
 
 //-------------------------------//
@@ -789,7 +832,7 @@ var aidi_assessment2 = {
                                                       //------------------//
                                                       // Intervention 2
                                                       //------------------//
-/*Define "earnings" variable that will be used for intervention 2 (incentivization/feedback)*/
+/*Define "earnings" global variable that will be used for intervention 2 (incentivization/feedback)*/
 let earnings = 0.00
 
 //------------------------//
@@ -915,13 +958,23 @@ var aidi_intervention2_feedback_incentivization_text = {
     `<p><div style ='font-size: 2vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 15vw; height: 9vh; position: fixed; left: 0vw; bottom: 16vh; border: .3vw solid transparent; border-radius: 1vw;'>Total earnings <b>$${earnings}</b></p>` +
     `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
     `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
-    `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
+    `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>` +
+    `<p><div style ='font-size: 2.9vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 9vw; height: 7vh; position: fixed; right: 0vw; top: 1vh; border: .3vw solid transparent; border-radius: 1vw;'><b>${trial_count}/20<b></p>`
   },
   choices: ["<p style ='font-size:2vw; color: black; position: fixed; left: 38vw; bottom: 1.3vh;'><b>Human</b></p>", "<p style ='font-size: 2vw; color: black; position: fixed; right: 41vw; bottom: 1.3vh'><b>AI</b></p>"],
   button_html: (choice) => {
     return `<button class="jspsych-btn" style="width: 15vw; height: 8vh; position: relative; top: 42vh;">${choice}</button>`
     },
     on_finish: function (data) {
+
+        /* Add trial counter*/
+        trial_count += 1
+
+        /* Reset trial counter*/
+        if (trial_count > 20) {
+          trial_count = 1
+        }
+
         if (data.response == 0) {
             ppt_response = "Human"
         }
@@ -942,6 +995,9 @@ var aidi_intervention2_feedback_incentivization_text = {
         }
         //Add a column called "correct_response" that stores the value in the "correct" variable
         data.correct_response = correct
+
+        //Add a column called "bonus_earnings" that stores the value in the "earnings" variable
+        data.bonus_earnings = earnings
   }
 }
 
@@ -1048,13 +1104,23 @@ var aidi_intervention2_feedback_incentivization_multifeatured = {
     `<p><div style ='font-size: 2vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 15vw; height: 9vh; position: fixed; left: 0vw; bottom: 16vh; border: .3vw solid transparent; border-radius: 1vw;'>Total earnings <b>$${earnings}</b></p>` +
     `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
     `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
-    `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
+    `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>` +
+    `<p><div style ='font-size: 2.9vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 9vw; height: 7vh; position: fixed; right: 0vw; top: 1vh; border: .3vw solid transparent; border-radius: 1vw;'><b>${trial_count}/20<b></p>`
   },
   choices: ["<p style ='font-size:2vw; color: black; position: fixed; left: 38vw; bottom: 1.3vh;'><b>Human</b></p>", "<p style ='font-size: 2vw; color: black; position: fixed; right: 41vw; bottom: 1.3vh'><b>AI</b></p>"],
   button_html: (choice) => {
     return `<button class="jspsych-btn" style="width: 15vw; height: 8vh; position: relative; top: 42vh;">${choice}</button>`
     },
     on_finish: function (data) {
+
+        /* Add trial counter*/
+        trial_count += 1
+
+        /* Reset trial counter*/
+        if (trial_count > 20) {
+          trial_count = 1
+        }
+
         if (data.response == 0) {
             ppt_response = "Human"
         }
@@ -1075,6 +1141,10 @@ var aidi_intervention2_feedback_incentivization_multifeatured = {
         }
         //Add a column called "correct_response" that stores the value in the "correct" variable
         data.correct_response = correct
+
+        //Add a column called "bonus_earnings" that stores the value in the "earnings" variable
+        data.bonus_earnings = earnings
+        
   }
 }
 
@@ -1271,13 +1341,18 @@ var aidi_assessment3_trials = {
     return `<img src="study_design_images/airbnb_scheme_interface.png" <div style= "position:fixed; width: 59vw; height: 87vh; left: 21.5vw; top: 0vh;"></img>` +
       `<img src="${jsPsych.evaluateTimelineVariable('place_stimuli')}" <div style= "position:fixed; width: 25vw; height: 35vh; left: 52.6vw; top: 16.2vh;"></img>` +
       `<img src="${jsPsych.evaluateTimelineVariable('face_stimuli')}" <div style= "position:fixed; width: 13vw; height: 23vh; left: 28.8vw; top: 25vh;"></img>` +
-      `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>`
+      `<p><div style ='font-size: 1.63vw; font-family: Arial; text-align: left; width: 56.7vw; height: 30vh; position: fixed; left: 21.8vw; bottom: 14vh; line-height: 1.2em; border: .3vw solid transparent; border-radius: 1vw; padding: 1vh;'>${jsPsych.evaluateTimelineVariable('text_stimuli')}</p>` +
+      `<p><div style ='font-size: 2.9vw; font-family: Arial; line-height: 1.25em; text-align: center; width: 9vw; height: 7vh; position: fixed; right: 0vw; top: 1vh; border: .3vw solid transparent; border-radius: 1vw;'><b>${trial_count}/32<b></p>`
   },
   choices: ["<p style ='font-size:2vw; color: black; position: fixed; left: 38vw; bottom: 1.3vh;'><b>Human</b></p>", "<p style ='font-size: 2vw; color: black; position: fixed; right: 41vw; bottom: 1.3vh'><b>AI</b></p>"],
   button_html: (choice) => {
     return `<button class="jspsych-btn" style="width: 15vw; height: 8vh; position: relative; top: 42vh;">${choice}</button>`
     },
     on_finish: function (data) {
+
+        /* Add trial counter*/
+        trial_count += 1
+
         if (data.response == 0) {
             ppt_response = "Human"
         }
@@ -1297,6 +1372,11 @@ var aidi_assessment3_trials = {
         }
         //Add a column called "correct_response" that stores the value in the "correct" variable
         data.correct_response = correct
+
+      /* Reset trial counter*/
+      if (trial_count > 32) {
+        trial_count = 1
+      }
   }
 }
 
@@ -1344,7 +1424,8 @@ var aidi_assessment3_conclusion = {
 },
     type: jsPsychInstructions,
     pages: function(){
-      pageOne =  "<p><div style ='font-size:5vw; margin-bottom: 5vh;'>Great job.</div></p>"+
+      pageOne =  '<img src="study_design_images/75_percent_progress.png" style="height: 13vh; width: 35vw; margin-bottom: 7vh;"></img>' +
+      "<p><div style ='font-size:5vw; margin-bottom: 5vh;'>Great job!</div></p>"+
       "<br><p><div style ='font-size:2.5vw; line-height: 1.25'>You've completed this task! Please click <b>Next</b> to answer some questions.</div></p>"
      return [pageOne]
   },
@@ -1368,5 +1449,5 @@ var aidi_assessment3 = {
 //------------------------------------//
 var human_ai_task = {
     timeline: [aidi_task_intro, aidi_baseline, aidi_intervention1, aidi_assessment2, aidi_intervention2, aidi_assessment3]
-    // timeline: [aidi_intervention2]
+    // timeline: [aidi_intervention1, aidi_intervention2]
 };
