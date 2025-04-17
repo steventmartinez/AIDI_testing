@@ -64,113 +64,31 @@ on_finish: function (data) {
 
     /**** For the "rental_frequency" question ****/
     /*If the question is "rental_frequency' and the participant answers "Once every 2 to 3 months or more frequently"*/
-    if (`${key}` == "rental_frequency" && `${data.response[key]}` == "Once every 2 to 3 months or more frequently") {
-      rental_frequency_categorical_answer = `${data.response[key]}`
-      rental_frequency_numerical_answer = 0
-    } else {
-      rental_frequency_categorical_answer = "NA"
-      rental_frequency_numerical_answer = "NA"
+    if (`${key}` == "rental_frequency") {
+      rental_frequency_answer = `${data.response[key]}`
     }
-
-    /*If the question is "rental_frequency' and the participant answers "Once every 4-6 months"*/
-    if (`${key}` == "rental_frequency" && `${data.response[key]}` == "Once every 4-6 months") {
-      rental_frequency_categorical_answer = `${data.response[key]}`
-      rental_frequency_numerical_answer = 1
-    } else {
-      rental_frequency_categorical_answer = "NA"
-      rental_frequency_numerical_answer = "NA"
-    }
-
-    /*If the question is "rental_frequency' and the participant answers "About once a year"*/
-    if (`${key}` == "rental_frequency" && `${data.response[key]}` == "About once a year") {
-      rental_frequency_categorical_answer = `${data.response[key]}`
-      rental_frequency_numerical_answer = 2
-    } else {
-      rental_frequency_categorical_answer = "NA"
-      rental_frequency_numerical_answer = "NA"
-    }
-
-    /*If the question is "rental_frequency' and the participant answers "Once every 1 to 3 years"*/
-    if (`${key}` == "rental_frequency" && `${data.response[key]}` == "Once every 1 to 3 years") {
-      rental_frequency_categorical_answer = `${data.response[key]}`
-      rental_frequency_numerical_answer = 3
-    } else {
-      rental_frequency_categorical_answer = "NA"
-      rental_frequency_numerical_answer = "NA"
-    }
-
-    /*If the question is "rental_frequency' and the participant answers "Less than once every 3 years"*/
-    if (`${key}` == "rental_frequency" && `${data.response[key]}` == "Less than once every 3 years") {
-      rental_frequency_categorical_answer = `${data.response[key]}`
-      rental_frequency_numerical_answer = 4
-    } else {
-      rental_frequency_categorical_answer = "NA"
-      rental_frequency_numerical_answer = "NA"
-    }
-
 
 
     /**** For the "rental_time" question ****/
     /* Tag data with categorical responses*/
 
     /*If the question is "rental_time' and the participant answers "Less than 15 minutes"*/
-    if (`${key}` == "rental_time" && `${data.response[key]}` == "Less than 15 minutes") {
-      rental_time_categorical_answer = `${data.response[key]}`
-      rental_time_numerical_answer = 0
-    } else {
-      rental_time_categorical_answer = "NA"
-      rental_time_numerical_answer = "NA"
+    if (`${key}` == "rental_time") {
+      rental_time_answer = `${data.response[key]}`
     }
 
-    /*If the question is "rental_time' and the participant answers "15-30 minutes"*/
-    if (`${key}` == "rental_time" && `${data.response[key]}` == "15-30 minutes") {
-      rental_time_categorical_answer = `${data.response[key]}`
-      rental_time_numerical_answer = 1
-    } else {
-      rental_time_categorical_answer = "NA"
-      rental_time_numerical_answer = "NA"
-    }
 
-    /*If the question is "rental_time' and the participant answers "30-60 minutes"*/
-    if (`${key}` == "rental_time" && `${data.response[key]}` == "30-60 minutes") {
-      rental_time_categorical_answer = `${data.response[key]}`
-      rental_time_numerical_answer = 2
-    } else {
-      rental_time_categorical_answer = "NA"
-      rental_time_numerical_answer = "NA"
-    }
-
-    /*If the question is "rental_time' and the participant answers "1-3 hours"*/
-    if (`${key}` == "rental_time" && `${data.response[key]}` == "1-3 hours") {
-      rental_time_categorical_answer = `${data.response[key]}`
-      rental_time_numerical_answer = 3
-    } else {
-      rental_time_categorical_answer = "NA"
-      rental_time_numerical_answer = "NA"
-    }
-
-    /*If the question is "rental_time' and the participant answers "3+ hours"*/
-    if (`${key}` == "rental_time" && `${data.response[key]}` == "3+ hours") {
-      rental_time_categorical_answer = `${data.response[key]}`
-      rental_time_numerical_answer = 4
-    } else {
-      rental_time_categorical_answer = "NA"
-      rental_time_numerical_answer = "NA"
-    }
   }
 
     //Add categorical and numerical columns for "rental_yesno" question
     data.rental_yesno_categorical_response = rental_yesno_categorical_answer
     data.rental_yesno_numerical_response = rental_yesno_numerical_answer
 
-    //Add categorical and numerical columns for "rental_frequency" question
-    data.rental_frequency_categorical_response = rental_frequency_categorical_answer
-    data.rental_frequency_numerical_response = rental_frequency_numerical_answer
+    //Add column for "rental_frequency" question
+    data.rental_frequency_response = rental_frequency_answer
 
-    //Add categorical and numerical columns for "rental_time" question
-    data.rental_time_categorical_response = rental_time_categorical_answer
-    data.rental_time_numerical_response = rental_time_numerical_answer
+    //Add column for "rental_time" question
+    data.rental_time_response = rental_time_answer
     
-
 }
 }

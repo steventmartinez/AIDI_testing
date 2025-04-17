@@ -111,95 +111,52 @@ var AI_use = {
   on_finish: function (data) {
 
     for (const key in data.response) {
+      // console.log(`${key}: ${data.response[key]}`);
 
       /*Store answer for "AIuse_endorsement" question*/
       if (`${key}` == "AIuse_endorsement") {
         AIuse_endorsement_answer = `${data.response[key]}`
-      } else {
-        AIuse_endorsement_answer = "NA"
-      }
-
-      /*Store answer for "AIuse_endorsement-Comment" question*/
-      if (`${key}` == "AIuse_endorsement-Comment") {
-        AIuse_endorsement_other_answer = `${data.response[key]}`
-      } else {
-        AIuse_endorsement_other_answer = "NA"
       }
 
       /*Store answer for "AIuse_platforms_texts" question*/
       if (`${key}` == "AIuse_platforms_texts") {
         AIuse_platforms_texts_answer = `${data.response[key]}`
-      } else {
-        AIuse_platforms_texts_answer = "NA"
-      }
-
-      /*Store answer for "AIuse_platforms_texts-Comment" question*/
-      if (`${key}` == "AIuse_platforms_texts-Comment") {
-        AIuse_platforms_texts_other_answer = `${data.response[key]}`
-      } else {
-        AIuse_platforms_texts_other_answer = "NA"
       }
 
       /*Store answer for "AIuse_platforms_images" question*/
       if (`${key}` == "AIuse_platforms_images") {
         AIuse_platforms_images_answer = `${data.response[key]}`
-      } else {
-        AIuse_platforms_images_answer = "NA"
       }
-
-      /*Store answer for "AIuse_platforms_images-Comment" question*/
-      if (`${key}` == "AIuse_platforms_images-Comment") {
-        AIuse_platforms_images_other_answer = `${data.response[key]}`
-      } else {
-        AIuse_platforms_images_other_answer = "NA"
-      } 
 
       /*Store answer for "AIuse_primary_platform" question*/
       if (`${key}` == "AIuse_primary_platform") {
         AIuse_primary_platform_answer = `${data.response[key]}`
-      } else {
-        AIuse_primary_platform_answer = "NA"
       }
 
       /*Store answer for "AIuse_estimate_sessions" question*/
       if (`${key}` == "AIuse_estimate_sessions") {
         AIuse_estimate_sessions_answer = `${data.response[key]}`
-      } else {
-        AIuse_estimate_sessions_answer = "NA"
       }
 
       /*Store answer for "AIuse_estimate_searches" question*/
       if (`${key}` == "AIuse_estimate_searches") {
         AIuse_estimate_searches_answer = `${data.response[key]}`
-      } else {
-        AIuse_estimate_searches_answer = "NA"
       }
 
       /*Store answer for "AIuse_actual_sessions" question*/
       if (`${key}` == "AIuse_actual_sessions") {
         AIuse_actual_sessions_answer = `${data.response[key]}`
-      } else {
-        AIuse_actual_sessions_answer = "NA"
       }
-  }
 
+}
     //Add a column called "AIuse_endorsement_response" that stores the answer
     data.AIuse_endorsement_response = AIuse_endorsement_answer
-
-    //Add a column called "AIuse_endorsement_other_response" that stores the answer
-    data.AIuse_endorsement_other_response = AIuse_endorsement_other_answer
 
     //Add a column called "AIuse_platforms_texts_response" that stores the answer
     data.AIuse_platforms_texts_response = AIuse_platforms_texts_answer
 
-    //Add a column called "AIuse_platforms_texts_other_response" that stores the answer
-    data.AIuse_platforms_texts_other_response = AIuse_platforms_texts_other_answer
-
     //Add a column called "AIuse_platforms_images_response" that stores the answer
     data.AIuse_platforms_images_response = AIuse_platforms_images_answer
-
-    //Add a column called "AIuse_platforms_images_other_response" that stores the answer
-    data.AIuse_platforms_images_other_response = AIuse_platforms_images_other_answer
 
     //Add a column called "AIuse_primary_platform_response" that stores the answer
     data.AIuse_primary_platform_response = AIuse_primary_platform_answer
@@ -212,6 +169,7 @@ var AI_use = {
 
     //Add a column called "AIuse_actual_sessions_response" that stores the answer
     data.AIuse_actual_sessions_response = AIuse_actual_sessions_answer
+
 
 }
 };
